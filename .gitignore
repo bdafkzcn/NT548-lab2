@@ -1,2 +1,6 @@
 
 *.exe
+
+echo "Terraform/NT548-lab2/" >> .gitignore
+git rm --cached Terraform/NT548-lab2/
+
