@@ -26,7 +26,7 @@ jobs:
         run: pip install --upgrade checkov
 
       - name: Run Checkov
-        run: checkov -d . --skip-external-checks
+        run: checkov -d . --run-all-external-checks
       
 
       - name: Set Terraform Variables
