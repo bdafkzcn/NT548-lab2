@@ -26,7 +26,7 @@ jobs:
         run: pip3 install checkov
 
       - name: Run Checkov
-        run: checkov -d . --skip-all-external-checks # Chạy Checkov trên toàn bộ thư mục
+        run: checkov -d . --skip-all-external-checks 
 
       - name: Set Terraform Variables
         run: |
@@ -42,7 +42,7 @@ jobs:
       - name: Terraform Apply
         run: terraform apply tfplan
 
-  destroy: # Job phá hủy (sử dụng cẩn thận)
+  destroy: 
     runs-on: ubuntu-latest
     needs: build
     steps:
