@@ -26,7 +26,8 @@ jobs:
         run: pip3 install checkov
 
       - name: Run Checkov
-        run: checkov -d . --skip-all-external-checks 
+        run: checkov -d . --skip-external-checks
+      
 
       - name: Set Terraform Variables
         run: |
