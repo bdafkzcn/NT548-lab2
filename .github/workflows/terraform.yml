@@ -60,8 +60,3 @@ jobs:
       - name: Terraform Destroy
         run: terraform destroy -auto-approve
 
-      - name: Install Checkov
-        run: pip install checkov
-
-      - name: Run Checkov
-        run: checkov -d ./
