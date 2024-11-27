@@ -23,7 +23,7 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Install Checkov
-        run: pip3 install checkov
+        run: pip install --upgrade checkov
 
       - name: Run Checkov
         run: checkov -d . --skip-external-checks
